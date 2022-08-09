@@ -5,7 +5,7 @@ const Hero = () => {
   return (
     <Wrapper name="home">
       <div className="container" data-aos="fade-in">
-        <div className="left">
+        <div className="center">
           {/* <span className="uppertext">
             <Typed
               strings={["Fast and Trusted Arabic Translations"]}
@@ -22,9 +22,6 @@ const Hero = () => {
             <button className="btn">Request Quote</button>
           </a>
         </div>
-        {/* <div className="right">
-          <img className="image" src={hero} alt="translation" />
-        </div> */}
       </div>
       <a href="https://wa.me/96181183601">
         <RiWhatsappFill className="whatsapp-icon" />

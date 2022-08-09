@@ -57,7 +57,7 @@ const Wrapper = styled.div`
       opacity: 0;
       background-color: var(--primary-color);
       height: calc(100vh - 70px);
-      transition: all 0.4s ease-in-out;
+      transition: top 0.4s ease-in-out;
 
       &.active {
         opacity: 1;
@@ -75,11 +75,15 @@ const Wrapper = styled.div`
       }
 
       li {
-        font-size: 1.15rem;
-        font-weight: 500;
+        font-size: 1.23rem;
+        font-weight: 400;
         color: #555;
         cursor: pointer;
         transition: all 0.2s ease-in-out;
+
+        .activeLink {
+          color: var(--secondary-color);
+        }
 
         &:hover {
           color: var(--secondary-color);

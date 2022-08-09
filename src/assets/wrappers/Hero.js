@@ -6,7 +6,7 @@ const Wrapper = styled.div`
   background-repeat: no-repeat;
   background-position: bottom;
   background-size: cover;
-  padding: 80px 0;
+  padding: 70px 0;
   width: 100%;
 
   @media (max-width: 1020px) {
@@ -24,19 +24,8 @@ const Wrapper = styled.div`
     align-items: center;
     justify-content: center;
     text-align: center;
-    @media (max-width: 1020px) {
-      grid-template-columns: 1fr;
-      padding: 0 25px;
-    }
-    @media (max-width: 1020px) {
-      grid-row-gap: 60px;
-    }
-    @media (max-width: 760px) {
-      padding: 0 10px;
-    }
 
-    .left {
-      margin-top: 20px;
+    .center {
       padding: 0 10px;
 
       @media (max-width: 1020px) {
@@ -109,7 +98,7 @@ const Wrapper = styled.div`
       }
     }
 
-    .right {
+    /* .right {
       @media (max-width: 1020px) {
         padding: 10px 50px;
       }
@@ -120,7 +109,7 @@ const Wrapper = styled.div`
         width: 100%;
         height: 100%;
       }
-    }
+    } */
   }
   .whatsapp-icon {
     z-index: 900;

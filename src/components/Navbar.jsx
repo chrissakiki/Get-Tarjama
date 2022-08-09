@@ -25,6 +25,7 @@ const Navbar = () => {
                 offset={-30}
                 spy={true}
                 onClick={() => setClick(false)}
+                activeClass="activeLink"
               >
                 {" "}
                 How It Works{" "}
@@ -35,9 +36,10 @@ const Navbar = () => {
               {" "}
               <Link
                 to="services"
-                offset={-60}
+                offset={-30}
                 spy={true}
                 onClick={() => setClick(false)}
+                activeClass="activeLink"
               >
                 {" "}
                 Services
@@ -47,9 +49,10 @@ const Navbar = () => {
               {" "}
               <Link
                 to="mainareas"
-                offset={-60}
+                offset={-30}
                 spy={true}
                 onClick={() => setClick(false)}
+                activeClass="activeLink"
               >
                 {" "}
                 Sectors
@@ -61,7 +64,8 @@ const Navbar = () => {
                 to="packages"
                 spy={true}
                 onClick={() => setClick(false)}
-                offset={-60}
+                offset={-30}
+                activeClass="activeLink"
               >
                 {" "}
                 Rates
