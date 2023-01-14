@@ -1,39 +1,23 @@
-import ClientWorkedWith from "./components/ClientWorkedWith";
-import Hero from "./components/Hero";
-import How from "./components/How";
-import MainArea from "./components/MainAreas";
-import Navbar from "./components/Navbar";
-import Services from "./components/Services";
-import AOS from "aos";
-import { useEffect } from "react";
-import "aos/dist/aos.css";
-import Choice from "./components/Choice";
-import Milestone from "./components/Milestone";
-import Rates from "./components/Rates";
-import Client from "./components/Client";
-import Footer from "./components/Footer";
+import React from "react";
+import Home from "./pages/Home";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Thankyou from "./pages/Thankyou";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
-function App() {
-  useEffect(() => {
-    AOS.init({
-      duration: 900,
-    });
-  }, []);
+const App = () => {
   return (
     <>
-      <Navbar />
-      <Hero />
-      <Choice />
-      <How />
-      <Services />
-      <MainArea />
-      <Milestone />
-      <ClientWorkedWith />
-      <Client />
-      <Rates />
-      <Footer />
+      <Router basename="/">
+        <ToastContainer />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/thankyou" element={<Thankyou />} />
+          <Route path="*" element={<Home />} />
+        </Routes>
+      </Router>
     </>
   );
-}
+};
 
 export default App;

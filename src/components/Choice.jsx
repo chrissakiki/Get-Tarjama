@@ -2,7 +2,6 @@ import Wrapper from "../assets/wrappers/Choice";
 import { BiTime } from "react-icons/bi";
 import { RiCustomerServiceFill } from "react-icons/ri";
 import { AiOutlineCheck } from "react-icons/ai";
-import { MdCheckCircle } from "react-icons/md";
 
 const Choice = () => {
   return (

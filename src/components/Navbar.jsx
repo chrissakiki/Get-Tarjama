@@ -3,8 +3,10 @@ import { useState } from "react";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { Link } from "react-scroll";
 import logo from "../assets/images/logo.png";
+import { useAppContext } from "../AppProvider";
 const Navbar = () => {
   const [click, setClick] = useState(false);
+  const { setOpen } = useAppContext();
   return (
     <Wrapper>
       <div className="container">
@@ -71,11 +73,21 @@ const Navbar = () => {
                 Rates
               </Link>
             </li>
-            <a href="https://wa.me/96181183601">
+            {/* <a href="https://wa.me/96181183601">
               <button className="btn" onClick={() => setClick(false)}>
                 Request Quote
               </button>
-            </a>
+            </a> */}
+
+            <button
+              className="btn"
+              onClick={() => {
+                setClick(false);
+                setOpen(true);
+              }}
+            >
+              Request Quote
+            </button>
           </ul>
         </div>
 

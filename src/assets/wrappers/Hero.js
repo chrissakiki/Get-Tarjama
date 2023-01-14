@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import hero from "../images/hero.jpg";
 const Wrapper = styled.div`
+  position: relative;
   background: linear-gradient(rgba(19, 33, 60, 0.95), rgba(19, 33, 60, 0.9)),
     url(${hero});
   background-repeat: no-repeat;
